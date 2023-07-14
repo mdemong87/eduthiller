@@ -1,10 +1,6 @@
-'use client'
-
 import { Noto_Serif_Bengali } from 'next/font/google'
-import { useEffect, useState } from 'react'
 import Footer from './componnent/Footer'
 import Header from './componnent/Header'
-import Loading from './componnent/loading/Loading'
 import './globals.css'
 
 const inter = Noto_Serif_Bengali({ subsets: ['latin'] })
@@ -16,11 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  const [isloading, setosloading] = useState(true);
+  // const [isloading, setosloading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => setosloading(false), 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setosloading(false), 3000);
+  // }, []);
 
 
 
@@ -28,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {isloading && <Loading />}
+        {/* {isloading && <Loading />} */}
         <Header />
         {children}
         <Footer />
