@@ -93,8 +93,18 @@ body {
   line-height: 60px;
 }
 
+/* swiper js */
+.swiper-button-next {
+  color: var(--primaryColor) !important;
+}
 
+.swiper-button-prev {
+  color: var(--primaryColor) !important;
+}
 
+.swiper-pagination-bullet {
+  background: var(--primaryBg) !important;
+}
 
 /* footerCss */
 .footerLinkGroup {
