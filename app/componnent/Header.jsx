@@ -4,12 +4,15 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { useAllcontext } from '../context/allcontext';
 import Container from "./Container";
 import Marquee from './Marquee';
 
 export default function Header() {
 
   const [isshow, setisshow] = useState(false);
+  const { isloading, setisloading } = useAllcontext();
+
 
 
 

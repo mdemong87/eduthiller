@@ -48,14 +48,13 @@ body {
 /* modile screen navber */
 .modileNav {
   background: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 270px;
   border: 1px solid var(--primaryBg);
   color: black;
-  /* padding: 30px 20px !important; */
 }
 
 .mobileNavGroup {
@@ -72,6 +71,26 @@ body {
 .HoverNavLink:hover {
   background: var(--primaryBg);
   color: #fff;
+}
+
+/* hero section */
+.herosection {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.37)), url("../public/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+
+.heroSectionWrp {
+  height: 530px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroSectionWrp>h1 {
+  line-height: 60px;
 }
 
 
@@ -92,4 +111,31 @@ body {
 .footerItemLinkHover:hover {
   color: var(--primaryColor);
   text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  .herosection {
+    height: fit-content;
+    padding: 30px 0px !important;
+  }
+
+  .heroSectionWrp {
+    height: fit-content !important;
+    text-align: center;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionWrp>p {
+    width: 100%;
+  }
 }

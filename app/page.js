@@ -1,12 +1,10 @@
-import Container from "./componnent/Container";
+import Hero from "./componnent/Hero";
 
 
 export default function Home() {
   return (
-    <main className='h-screen'>
-      <Container>
-        this is home page
-      </Container>
+    <main className='h-fit'>
+      <Hero />
     </main>
   )
 }

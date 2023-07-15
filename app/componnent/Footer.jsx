@@ -5,6 +5,7 @@ import { RiTrademarkFill, RiWhatsappFill } from "react-icons/ri";
 import { TiTick } from "react-icons/ti";
 import Container from "./Container";
 
+
 export default function Footer() {
   return (
     <div className='bg-gray-700'>
