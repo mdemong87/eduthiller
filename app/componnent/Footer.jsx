@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="w-full">
               <h2 className="text-xl text-gray-300 capitalize text-left">Important Link</h2>
               <div className="text-gray-400 footerLinkGroup">
-                <Link className="flex items-center gap-2 capitalize footerItemLinkHover" href={"/"}>
+                <Link className="flex items-center gap-2 capitalize footerItemLinkHover" href={"/about"}>
                   <TiTick className="cc text-lg" />
                   about us
                 </Link>
